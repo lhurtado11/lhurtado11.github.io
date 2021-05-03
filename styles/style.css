@@ -16,6 +16,7 @@ font-family: 'Pattaya', sans-serif; */
 }
 
 body {
+    font-size: 16px;
     background: var(--background);
 }
 
@@ -60,4 +61,28 @@ header nav a:hover {
 header nav a.activo {
     color: var(--black);
     font-weight: bold;
+}
+
+/* sections */
+
+.aboutMe  {
+    padding: 5em 10em;
+    width: 100%;
+    min-height: 40em;    
+    color: var(--black);
+    background: url(../assets/main-background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    height: 80vh;  
+    width: 100%;
+}
+
+footer {
+    height: 80vh;
+    width: 100%;
+    background: url(../assets/footer.png);
+    color: var(--white);
 }
