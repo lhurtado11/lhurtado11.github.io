@@ -75,6 +75,45 @@ header nav a.activo {
     background-size: cover;
 }
 
+.container-main {
+    max-width: 70em;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.aboutMe .container-main .description {
+    background-color: var(--black);
+    color: var(--white);
+    max-width: 42em;
+    min-height: 10em;
+}
+
+.aboutMe .container-main .description h2 {
+    font-size: 4em;
+    font-family: 'Bebas Neue', cursive;
+    font-weight:normal;    
+    margin-bottom: 0.3em;
+}
+
+.aboutMe .container-main .description p {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: inherit;
+}
+
+.aboutMe .container-main .img-avatar img {
+    border-radius: 80em;
+    height: 26em;
+    width: 20em;
+    min-width: 18em;
+}
+
+
+
 main {
     height: 80vh;  
     width: 100%;
