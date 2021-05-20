@@ -21,10 +21,11 @@ body {
 }
 
 header {
-    padding: 2px;
+    /* padding: 2px; */
     position: fixed;
     top: 0;    
     width: 100%;
+    z-index: 200;
 }
 
 header .container {
@@ -83,8 +84,6 @@ header nav a.activo {
     justify-content: space-between;
 }
 
-
-
 .aboutMe .container-main .description {
     background-color: var(--black);
     color: var(--white);
@@ -112,11 +111,213 @@ header nav a.activo {
     min-width: 18em;
 }
 
-
-
-main {
+/* main {
     height: 80vh;  
     width: 100%;
+} */
+.container-cards {
+    width: 100%;
+    /* margin: auto; */
+}
+.technologies {
+    margin-bottom: 4.375em;
+}
+
+.technologies .technologies-carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.technologies .technologies-carousel .left-arrow,
+.technologies .technologies-carousel .right-arrow {
+    position: absolute;
+    top: calc(50% - 25%);
+    font-size: 2.5em;
+    width: 1em;
+    height: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    line-height: 2.5em;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.technologies .technologies-carousel .left-arrow {
+    left: 0;
+}
+
+.technologies .technologies-carousel .right-arrow {
+    right: 0;
+}
+
+.technologies .technologies-carousel .left-arrow:hover,
+.technologies .technologies-carousel .right-arrow:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* carousel */
+.technologies .container-carousel-technologies {
+    width: 100%;
+	padding: 1.25em 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.technologies .container-carousel-technologies .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.technologies .container-carousel-technologies .carousel .card {
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 0.3125em, 0.3125em, 0.3125em rgba(0, 0, 0, 0.3);
+    height: 20em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.2em;
+    border-radius: 2em;
+}
+
+.technologies .technologies-carousel .container-carousel-technologies .card img{
+    width: 100%;
+    vertical-align: top;
+}
+.technologies .technologies-carousel .container-carousel-technologies .card h3 {
+    color: white;
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    
+}
+
+.technologies .technologies-carousel .container-carousel-technologies .card .card-container {
+    background: white;
+    width: 10em;
+    height: 10em;
+    border-radius: 5em;
+}
+#github {
+    background: black;
+}
+
+#github img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+}
+#gitflow {
+    background: #de4c36;
+}
+
+#gitflow img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+}
+#gitflow h3 span {
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+}
+#javascript {
+    background: #f7df1e;
+}
+
+#javascript img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+    border-radius: 5em;
+}
+#javascript h3 {
+    color: black;
+}
+#react {
+    background: #3cd6ff;
+}
+
+#react img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+}
+#react h3 {
+    color: black;
+}
+#node {
+    background: rgb(201, 196, 196);
+}
+#node img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+}
+
+#node h3 {
+    text-align: center;
+    line-height: 1em;
+}
+
+#mongo {
+    background: rgb(221, 216, 216);
+}
+#mongo img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+}
+#html {
+    background: linear-gradient(#e44d26 0%, #f16529 100%);
+}
+#html img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+
+}
+#html h3 {
+    color: black;
+}
+#css {
+    background: #0277bd;
+}
+#css img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+}
+#css h3 {
+    color: black;
+}
+#jquery {
+    background: #0868AC;
+}
+#jquery img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+}
+#jquery h3 {
+    color: black;
+}
+#scrum {
+    background: #3cd6ff;
+}
+
+#scrum img {
+    width: 10em;
+    height: 10em;
+    padding: 0.5em;
+}
+#scrum h3 {
+    color: #194057;
 }
 
 footer {

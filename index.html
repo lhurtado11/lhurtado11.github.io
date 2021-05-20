@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="fonts/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@800&family=Pattaya&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/3e06043eda.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -36,8 +37,87 @@
         </div>
     </div>
     <main>
-        <div class="technologies" id="technologies">
-
+        <div class="technologies container-cards" id="technologies">
+            <div class="container-title-controls">
+                <h2>Tecnologías</h2>
+                <div class="controls"></div>
+            </div>
+            <div class="technologies-carousel">
+                <button role="button" id=left-arrow" class="left-arrow">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <div class="container-carousel-technologies">
+                    <div class="carousel">
+                        <div class="card" id="github">
+                            <div class="card-container">
+                                <img src="assets/github-icon.svg" alt="">
+                                <h3>Github</h3>
+                            </div>
+                       </div>
+                       <div class="card" id="gitflow">
+                            <div class="card-container">
+                                <img src="assets/git-icon.svg" alt="">
+                                <h3>git<span>flow</span></h3>
+                            </div>
+                       </div>
+                       <div class="card" id="javascript">
+                            <div class="card-container">
+                                <img src="assets/logo-javascript.svg" alt="">
+                                <h3>JavaScript</h3>
+                            </div>    
+                        
+                       </div>
+                       <div class="card" id="react">
+                        <div class="card-container">
+                            <img src="assets/react-2.svg" alt="">
+                            <h3>React</h3>
+                        </div> 
+                       </div>
+                       <div class="card" id="node">
+                            <div class="card-container">
+                                <img src="assets/nodejs.svg" alt="">
+                                <h3>Node.js <br> Express.js</h3>
+                            </div>
+                       </div>
+                       <div class="card" id="mongo">
+                            <div class="card-container">
+                                <img src="assets/mongodb.svg" alt="">
+                                <h3>MongoDB</h3>
+                            </div>                           
+                       </div>
+                       <div class="card" id="html">
+                            <div class="card-container">
+                                <img src="assets/html5.svg" alt="">
+                                <h3>HTML5</h3>
+                            </div>    
+                        
+                       </div>
+                       <div class="card" id="css">
+                        <div class="card-container">
+                            <img src="assets/css-5.svg" alt="">
+                            <h3>CSS</h3>
+                        </div>     
+                       </div>
+                       <div class="card" id="jquery">
+                            <div class="card-container">
+                                <img src="assets/jquery-1.svg" alt="">
+                                <h3>Jquery</h3>
+                            </div>
+                       </div>
+                       <div class="card" id="scrum">
+                        <div class="card-container">
+                            <img src="assets/scrum-1.svg" alt="">
+                            <h3>Scrum</h3>
+                        </div>    
+                        
+                             
+                        </div>
+                    </div>   
+                </div>
+                <button role="button" id=right-arrow" class="right-arrow">
+                    <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
         </div>
         <div class="projects" id="projects">
 
